@@ -20,7 +20,7 @@ jobs:
     if: github.repository_owner == 'kubewarden' || github.event_name != 'schedule'
     name: "Tests"
     needs: [build]
-    uses: kubewarden/kubewarden-end-to-end-tests/.github/workflows/e2e-tests.yml@main
+    uses: kravciak/kubewarden-end-to-end-tests/.github/workflows/e2e-tests.yml@main
     with:
       controller-image-repository: ${{ needs.build.outputs.repository }}
       controller-image-tag: ${{ needs.build.outputs.tag }}
