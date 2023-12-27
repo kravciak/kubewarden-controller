@@ -104,7 +104,6 @@ jobs:
         uses: actions/download-artifact@f44cd7b40bfd40b6aa1cc1b9b5b7bf03d3c67110 # v4.1.0
         with:
           name: CRDS
-          path: ./
 
       - name: Display structure of downloaded files
         run: ls -R
